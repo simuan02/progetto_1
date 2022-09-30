@@ -14,11 +14,10 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
-        // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
-        out.println("<p>Primo messaggio di prova</p>");
+        out.println("<p>Primo messaggio di prova. Ciao!</p>");
         out.println("</body></html>");
     }
 
